@@ -1,0 +1,317 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=.75in,right=.75in,bottom=0.6in,top=0.6in, headsep = .4in]{geometry}
+
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \large{\textbf{\textsc{\MakeLowercase{#1}}}}}
+    \vspace*{-6pt}\lineunder
+}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrule}{\vspace{-7pt} \hspace{-18pt} \leaders \hrule height \dimexpr 0.4pt \hfill \kern 0pt}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+\rhead{\textit{Last Updated: November 23, 2023}}
+\lhead{Curriculum Vitae}
+
+
+\begin{document}
+
+% \vspace*{-40pt}
+
+
+%==== Profile ====%
+ \vspace{50pt}
+\begin{center}
+	{\Huge \scshape \bfseries {Amaan M. Jogia-Sattar}}\\
+ \vspace{2mm}
+	Los Angeles, CA $\cdot$ amaanjogiasattar@gmail.com $\cdot$ (818)-447-9553 $\cdot$ https://github.com/amaanjsattar \\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\vspace{2mm}
+\textbf{University of California, Berkeley}\hfill Berkeley, CA\\
+B.A. Public Health; Minor: Data Science
+\textit{GPA: 3.95} \hfill Aug. 2020 - May 2024\\
+\vspace{3mm}
+
+%==== Experience ====%
+\header{Research Experience}
+\vspace{2mm}
+
+\textbf{UCLA Jonsson Comprehensive Cancer Center} \hfill Los Angeles, CA\\
+\textit{Bruins-in-Genomics Summer Undergraduate Researcher, Boutros Lab} \hfill May 2023 - Aug. 2023\\
+\vspace{2mm}
+\setlength\leftskip{25pt}
+\textbf{Advisor: Prof. Paul C. Boutros - Dept. of Human Genetics, Dept. of Urology}\\
+\setlength\leftskip{0pt}
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Objective: Investigating the impact of transcriptional outliers on breast cancer prognosis using RNA-Seq and microarray gene expression data. \item Examined genes exhibiting bimodal sample-wide expression patterns, assessing correlation between outlier gene count and clinical phenotypes. 
+ \item Employed multiple Cox regression to assess the predictive role of outlier gene count in patient survival. Performed FDR-corrected univariate Cox modeling to identify extreme outlier genes.  \item Presented findings at the B.I.G. Summer Research Symposium and received Research Excellence Award.
+\end{itemize}
+\textbf{UC Berkeley Disability Lab} \hfill Berkeley, CA\\
+\textit{Lead Undergraduate Researcher / Project Manager: Environmental Sensing} \hfill Sep. 2022 - May 2023\\
+\vspace{2mm}
+\setlength\leftskip{25pt}
+\textbf{Advisor: Prof. Karen Nakamura - Dept. of Anthropology, Chair of Disability Studies}\\
+\setlength\leftskip{0pt}
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+        \item Objective: Identifying the harms of temporal light modulation (TLM) in classroom overhead lighting. 
+        \item Led team of 5 researchers in development of sensor with accompanying data-logging interface to quantify frequency variations in classroom lighting.
+        \item Analyzed frequency components of logged waveforms using Fourier Transform. Processed component waveform frequencies to calculate stroboscopic visibility measures (SVM) and perceptibility of temporal light modulation (PstLM).
+        \item Managed ethnographic outreach to >5,000 disabled and light-sensitive students in partnership with departmental newsletters, student organizations, the Disabled Students Program, and news outlets.
+
+\end{itemize}
+\textbf{University of Michigan School of Public Health} \hfill Ann Arbor, MI\\
+\textit{Big Data Summer Institute Undergraduate Researcher, Computational HCI Lab} \hfill Jun. 2022 - Jul. 2022\\
+\vspace{2mm}
+\setlength\leftskip{25pt}
+\textbf{Advisor: Prof. Nikola Banovic - Dept. of Electrical Engineering \& Computer Science} \\
+\setlength\leftskip{0pt}
+\vspace{-2mm}
+\begin{itemize}
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+    \item Objective: Generating Local Interpretable Model-Agnostic Explanations (LIME) for U-Net multisequence tumour segmentation.
+    \item Preprocessed MRI data across T1, T1-gd, T2, and FLAIR sequences. Altered LIME's documentation to accommodate multisequence input.
+    \item Reframed segmentation as pixel-wise binary classification task. Leveraged Armis2 HPC cluster to generate composite, explanatory heatmaps for quickshift and felzenszwalb superpixel algorithms.  
+    \item Presented findings at the annual Symposium on Big Data, Human Health, and Statistics.
+
+\end{itemize}
+\textbf{UC Berkeley Disability Lab} \hfill Berkeley, CA\\
+\textit{Undergraduate Researcher: Sensible Computing} \hfill Sep. 2021 - Jun. 2022\\
+\vspace{2mm}
+\setlength\leftskip{25pt}
+\textbf{Advisor: Prof. Karen Nakamura - Dept. of Anthropology, Chair of Disability Studies} \\
+\setlength\leftskip{0pt}
+\vspace{-2mm}
+\begin{itemize}
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+    \item Objective: Create a Turing-complete programming environment ideal for learners who find conventional keyboard/mouse/screen programming environments inaccessible.
+    \item Prototyped a screenless, tactile-input, programming interface that can be written, read, and debugged through multisensory (tactile, haptic, and auditory) pathways.
+    \item Integrated a small, single-board CPU with an attached high-definition camera and OpenCV to enable a running, real-time interpreter for tactile-input code. 
+    \item Presented findings at the TrIO-SSS x Berkeley Disability Lab Research Showcase.
+\end{itemize}
+
+\vspace{1mm}
+
+%==== Teaching and Mentoring ====%
+\header{Teaching \& Mentoring}
+\vspace{2mm}
+
+\textbf{UC Berkeley Division of Computing, Data Science, and Society} \hfill Berkeley, CA\\
+\textit{Lab Teaching Assistant, Foundations of Data Science} \hfill May 2023 - Aug. 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Assisted 30 students in UC Berkeley's Foundations of Data Science weekly lab introducing computational thinking and statistical inference in Python. 
+        \item Taught fundamental data science concepts tested in weekly Jupyter Notebooks, including A/B testing, interpreting confidence, regression, and conditional probability.
+\end{itemize}
+
+\vspace{1mm}
+%==== Professional Experience ====%
+\header{Professional Experience}
+\vspace{2mm}
+
+\textbf{UC Berkeley Disability Lab} \hfill Berkeley, CA\\
+\textit{Senior Undergraduate Lab Manager} \hfill May 2023 - Aug. 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Directed weekly lab meetings for 20+ undergraduate and graduate researchers.
+        \item Facilitated lab access and maintenance for routine meetings and collaborative campus events.
+        \item Spearheaded interview and recruitment process for prospective researchers via the Undergraduate Research Apprenticeship Program.
+        
+\end{itemize}
+\textbf{Barnstorm VFX} \hfill Burbank, CA\\
+\textit{Operations Research Intern} \hfill Jul 2023 - Aug. 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Managed facility organization- tracking technological inventory, onsite deliveries, and storage efficiency.
+        \item Tracked health metrics (temperature, survey responses, etc.) of 20+ onsite employees daily.  Implemented COVID-19 screening initiatives and workplace sanitation protocols.
+        \item Conducted attendance screenings and onsite facility management for the company’s 10th-anniversary celebration (approx. 100 attendees).
+\end{itemize}
+
+\textbf{University of California, San Diego} \hfill La Jolla, CA\\
+\textit{Bioinformatics Mentee} \hfill Jul. 2019\\
+\vspace{1mm}
+\setlength\leftskip{25pt}
+
+\setlength\leftskip{0pt}
+\vspace{-1mm}
+\begin{itemize}
+	\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+    \item Visualized NCBI sequencing data for genes encoding ABCC-type phytochelatin transporters.
+    \item Implemented BLAST to identify sequence similarity and pinpoint mutations enhancing arsenic tolerance in \textit{Arabidopsis thaliana}.
+    \item Compared efficacy and efficiency of Illumina Next-Gen SBS Sequencing and Sanger-Chain Termination PCR methods. Discussed
+financial and ethical implications in Salk Institute workshops.
+\end{itemize}
+\vspace{2mm}
+%==== Presentations ====%
+\header{Presentations}
+\vspace{2mm}
+
+\textbf{Oral Presentations}
+\begin{itemize}
+\item[] 
+    \textbf{Jogia-Sattar, A.}, Evans, J., Han, J.Y., Qiu, Z., and Boutros, P.C. (Aug. 2023). \textit{Unveiling Survival Signatures: Assessing Contributions of Transcriptional Outliers on Breast Cancer Survival}. \\
+    Boutros Lab Undergraduate Research Showcase, Los Angeles, CA.
+    
+    \vspace{2mm}
+    
+    \textbf{Jogia-Sattar, A.}, Nie, R., Kim, A. (Jul. 2022). \textit{Modifying Local Interpretable Model-Agnostic Explanations to Explain Tumour Segmentation Predictions}. \\
+    Annual Symposium on Big Data, Human Health, and Statistics, Ann Arbor, MI.
+\end{itemize}
+
+\textbf{Poster Presentations}
+\begin{itemize}
+\item[] 
+    \textbf{Jogia-Sattar, A.}, Evans, J., Han, J.Y., Qiu, Z., and Boutros, P.C. (Aug. 2023). \textit{Unveiling Survival Signatures: Assessing Contributions of Transcriptional Outliers on Breast Cancer Survival}. \\
+    Poster presented at the UCLA QCBio B.I.G. Summer Research Symposium, Los Angeles, CA.
+    
+    \vspace{2mm}
+    
+    Nie, R., \textbf{Jogia-Sattar, A.}, Kim, A. (Nov. 2022). \textit{LIME-S: Explaining Deep Learning-Based Segmentation of Brain Tumour Images}. \\
+    Poster presented by coauthor Nie, R. at the 2022 Michigan AI Symposium , Ann Arbor, MI.
+
+     \vspace{2mm}
+    
+    \textbf{Jogia-Sattar, A.}, Nie, R., Kim, A. (Jul. 2022). \textit{Local Interpretable Model-Agnostic Explanations for Medical Image Segmentation}. \\
+    Poster presented at the Annual Symposium on Big Data, Human Health, and Statistics, Ann Arbor, MI.
+\end{itemize}
+\vspace{2mm}
+%==== Honors and Awards ====%
+\header{Honors \& Awards}
+\vspace{2mm}
+
+\begin{tabular}{@{}l l}
+    2023 & Research Excellence Award, \\
+         & \textit{UCLA Institute for Quantitative and Computational Biosciences} \\ [4pt]
+    2020-2023 & Dean's Honors List (all semesters in attendance) \\
+        & \textit{UC Berkeley College of Letters and Sciences} \\ [4pt]
+    2020-2023 & Honors to Date (all semesters in attendance) \\
+        & \textit{UC Berkeley College of Letters and Sciences} \\ [4pt]
+    2021-2022 & Estha M. Rodkey Scholarship, \\
+         & \textit{UC Berkeley} \\ [4pt]
+    2021-2022 & Berkeley Undergraduate Scholarship, \\
+         & \textit{UC Berkeley} \\
+
+\end{tabular}
+
+\vspace{4mm}
+%==== Service & Outreach ====%
+\header{Campus Involvement \& Outreach}
+\vspace{2mm}
+\textbf{UC Berkeley Splash - Educational Outreach} \hfill Berkeley, CA \\
+\textit{Co-Instructor: Introduction to Disability-Centered Design} \hfill 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Led a high-school seminar critically examining the Principles of Universal Design, their history, and contemporary criticism. Introduced the notion of Disability-Centered Design through a hands-on prototyping exercise. Discussed disability-focused research avenues. 
+\end{itemize}
+
+\textbf{Cal Undergraduate Public Health Coalition} \hfill Berkeley, CA\\
+\textit{Committee Member: Human Health and Environment (HHE)} \hfill 2021 - 2023\\
+\vspace{-1mm}
+\begin{itemize} \itemsep1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Led committee-wide data visualization project examining the relationship between historical redlining and concentration of environmental contaminants in Oakland's water supply. 
+        \item Organized Berkeley Public Health faculty presentations and open panels throughout the academic year.
+\end{itemize}
+
+
+\textbf{Mental Health Commission} \hfill Berkeley, CA\\
+\textit{Departmental Associate: Associated Students of the University of California (ASUC)} \hfill 2021 - 2022\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Consulted with and organized collaboration between MHC and campus-elected Senators.
+        \item Aided organization and launch of UC Berkeley’s Mental Health Week (30+ organizations and 800+ students in attendance).
+        \item Facilitated the development of commission-wide podcast and newsletter, including ”Student Spotlight” features and testimonials from licensed mental health professionals.
+\end{itemize}
+
+
+\textbf{RideOn Therapeutic Horsemanship} \hfill Chatsworth, CA\\
+\textit{Volunteer Equine Therapy Riding Instructor} \hfill 2020 - 2021\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+\setlength\itemsep{0pt}  % Adjust the spacing between items
+	\setlength\parskip{0pt}  % Adjust the spacing between paragraphs
+	\setlength\parsep{0pt}  % Adjust the spacing between paragraphs
+	\setlength\leftskip{0pt}  % Adjust the indentation
+	\renewcommand\labelitemi{\tiny$\bullet$} % Adjust the bullet size
+	\item Delivered equine-assisted hippotherapy riding lessons for children and adults with cognitive and physical disabilities.
+        \item Collaborated with physical therapists, counselors, and administrators to schedule and format lessons, assist in fundraising, and conduct outreach.
+        \item Conducted new volunteer orientiations and trainings on sensitivity, human-animal interaction, and delivery of instruction.
+\end{itemize}
+
+\end{document}
